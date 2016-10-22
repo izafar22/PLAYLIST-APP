@@ -4,7 +4,8 @@
   "description": "my first playlist app",
   "main":"server.js",
   "scripts":{
-    "start":"node server.js",
+    "start":"node server.js"
+  },
   "dependencies": {
     "angular-youtube-embed": "^1.3.0",
     "async": "^2.0.0-rc.6",
