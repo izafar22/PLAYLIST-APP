@@ -1,0 +1,7 @@
+{
+	"name":"PLAYLIST-APP",
+	"description":"my first deployment",
+	"repository":"https://github.com/izafar22/PLAYLIST-APP.git",
+	"keywords":["node","express","static"],
+	"image":"heroku/nodejs"
+}

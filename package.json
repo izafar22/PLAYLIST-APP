@@ -2,6 +2,9 @@
   "name": "Angular-playlist-App",
   "version": "0.0.1",
   "description": "my first playlist app",
+  "main":"server.js",
+  "scripts":{
+    "start":"node server.js",
   "dependencies": {
     "angular-youtube-embed": "^1.3.0",
     "async": "^2.0.0-rc.6",
@@ -10,5 +13,17 @@
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-session": "^1.13.0"
-  }
+  },
+  "engines":{
+    "node":"0.10.44"
+  },
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/izafar22/PLAYLIST-APP.git"
+  },
+  "keywords":[
+  "node",
+  "heroku",
+  "express"
+  ]
 }
