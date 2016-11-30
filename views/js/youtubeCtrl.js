@@ -3,31 +3,31 @@
     var youtubeCtrl=function($scope,youtubeEmbedUtils,httpFactory,$interval){
     var tracker=1;
     $scope.theBestVideo=httpFactory.getFirstSong();
-     var lists=[]; 
+     var lists=[];
 function init()
     {
-        $interval(function(){ 
+        $interval(function(){
  httpFactory.getPlaylist()
  .then(function(res){
     lists=res.data.result.map(function(video){
         var index=video.indexOf("v=");
         console.log(index);
         var urlpath=video.slice(index+2);
-        return urlpath; 
-    });  
+        return urlpath;
+    });
  console.log('---######urlpath----',lists);
- }); 
+ });
    },10000);
- 
+
 }
  init();
-    
+
     $scope.playervars={
         controls:1,
         autoplay:1
     };
 
-   
+
     $scope.$on('youtube.player.ended', function ($event, player) {
     console.log("hiiii");
     console.log('I am tracker',tracker);
@@ -48,7 +48,7 @@ else{
   });
 
 };
-    
+
 var youtubeVideo=function($window, youtubeEmbedUtils){
 
     var uniqId = 1;
