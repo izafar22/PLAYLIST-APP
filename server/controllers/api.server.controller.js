@@ -9,7 +9,7 @@ exports.addSong=function(req,res,next){
     playlist.push(req.body.url);
                                  }
 
-	console.log(playlist);
+	//console.log(playlist);
 
 	res.json({"error":0,"errorMsg":"Registered success.", "result": playlist});
       
@@ -19,7 +19,7 @@ exports.addSong=function(req,res,next){
 exports.getPlaylist = function(req,res){
 	if(playlist.length > 0)
 {
-	console.log("---playlist----",playlist);
+	//console.log("---playlist----",playlist);
 	res.json({"error":0,"errorMsg":"Registered success.", "result": playlist});
 }
 else
@@ -37,7 +37,7 @@ exports.deleteSong=function(req,res){
 		var index=playlist.indexOf(req.body.url);
 		var deleted=playlist.splice(index,1);
 	     console.log('---song deleted----',deleted);
-	     console.log('-------playlist-----',playlist);
+	  //   console.log('-------playlist-----',playlist);
    if(playlist.length > 0)    	
 	{
 		res.json({"error":0,"errorMsg":"Registered success.", "result": playlist});
