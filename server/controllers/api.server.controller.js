@@ -8,7 +8,6 @@ exports.addSong=function(req,res,next){
         if (playlist.indexOf(req.body.url) == -1) {
     playlist.push(req.body.url);
                                  }
-
 	//console.log(playlist);
 
 	res.json({"error":0,"errorMsg":"Registered success.", "result": playlist});
